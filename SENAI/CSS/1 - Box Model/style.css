@@ -9,6 +9,7 @@ main{
     margin: 0 5%;
     background-color: white;
     padding: 1% 0 5% 2%;
+    border-radius: 5px;
 }
 
 h1 {
@@ -44,4 +45,38 @@ img {
 
 p {
   padding-right: 25%;
+}
+
+.nav_btn{
+  width: 100%;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+}
+
+.nav_btn span{
+  margin-right: 10px;
+  text-decoration: none;
+  padding: 2px;
+  border-radius: 5px;
+}
+.nav_btn a{
+  text-decoration: none;
+  color: white;
+}
+
+.btn_sesi{
+  margin-left: 75%;
+  border: red solid 2px;
+  background-color: red
+  
+}
+
+.btn_senai{
+  border: blue solid 2px;
+  background-color: blue;
+}
+
+.btn_fiesp{
+  border: green 2px solid;
+  background-color: green;
 }
