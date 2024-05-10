@@ -9,7 +9,7 @@
   <body>
     <main>
       <header class="topo">
-        <article>
+        <article class="artigo">
           <h1>POSITIONS</h1>
 
           <p>
@@ -35,65 +35,72 @@
       </header>
 
       <section class="estatica">
-        <article>
+        <article class="artigo">
           <h2>CSS Position Static:</h2>
           <p>
             Esse é o valor default de todo elemento HTML, ou seja, ele vai seguir o
             fluxo comum da sua página. Para declará-lo faça:
           </p>
         </article>
-        <section class="ex_estatica">
-          
-          <code class="principal">
+        <section class="exemplo_estatica">
+          <code class="codigo">
             <pre>
                       <span class="pai">Seletor</span> {
                           <span class="filho">position</span>: static;
                       }
-                  </pre>
+              </pre>
           </code>
         </section>
       </section>
 
+      <section class="posicao_relativa">
+        <article class="artigo">
       <h2>CSS Position Relative</h2>
       <p>
         Utilizando o position Relative o elemento passa a aceitar as propriedades
         Top, Bottom, Left e Right. Com elas você pode alterar o posicionamento do
         elemento. Ex:
       </p>
-      <span>HTML:</span>
+    </article>
+    <section class="exemplo_relativa">
+        <h3>HTML:</h3>
 
-      <code class="principal">
-        <pre>
-            &lt;<span class="n1">div</span>&gt;
-                  &lt;<span class="n1">h1</span>&gt;Sou um h1&lt;/<span class="n1">h1</span>&gt;
-                  &lt;<span class="n1">h2</span>&gt;Sou um h2&lt;/<span class="n1">h2</span>&gt;
-              &lt;/<span class="n1">div</span>&gt;
-          </pre>
-      </code>
+        <code class="codigo">
+          <pre>
+              &lt;<span class="n1">div</span>&gt;
+                    &lt;<span class="n1">h1</span>&gt;Sou um h1&lt;/<span class="n1">h1</span>&gt;
+                    &lt;<span class="n1">h2</span>&gt;Sou um h2&lt;/<span class="n1">h2</span>&gt;
+                &lt;/<span class="n1">div</span>&gt;
+            </pre>
+        </code>
 
-      <span>CSS:</span>
+        <h3>CSS:</h3>
 
-      <code class="principal">
-        <pre>
-              <span class="pai">div</span> { 
-                  <span class="filho">background:</span> #eee;
-                  <span class="filho">margin:</span> 200px 200px;
-                  <span class="filho">width:</span> 300px; height: 300px;
-            
-              }
+        <code class="codigo">
+          <pre>
+                <span class="pai">div</span> { 
+                    <span class="filho">background:</span> #eee;
+                    <span class="filho">margin:</span> 200px 200px;
+                    <span class="filho">width:</span> 300px; height: 300px;
+              
+                }
 
-        <span class="pai">h1</span> { 
-                  <span class="filho">position:</span> relative;
-                  <span class="filho">top: 20px;</span> left: 20px;
-        
-              }
+          <span class="pai">h1</span> { 
+                    <span class="filho">position:</span> relative;
+                    <span class="filho">top: 20px;</span> left: 20px;
+          
+                }
 
-        <span class="pai">h2</span> { 
-                  <span class="filho">top:</span> 20px; left: 20px; 
-              }
-          </pre>
-      </code>
+          <span class="pai">h2</span> { 
+                    <span class="filho">top:</span> 20px; left: 20px; 
+                }
+            </pre>
+        </code>
+      </section>
+    </section>
 
+    <section class="posicao_absoluta">
+      <article class="artigo">
       <h2>CSS Position Absolute</h2>
       <p>
         O position Absolute é um grande quebra galho no
@@ -101,8 +108,9 @@
         >. Com ele você pode posicionar qualquer elemento de acordo com o elemento
         pai que tenha um position diferente de static.
       </p>
-
-      <code class="principal">
+    </article>
+    <section class="exemplo_absoluta">
+      <code class="codigo">
         <pre>
               
                 &lt;<span class="n1">div</span>&gt;
@@ -125,11 +133,10 @@
         DIV.
       </p>
 
-      <p>HTML:</p>
+      <h3>HTML:</h3>
 
-      <code class="principal">
+      <code class="codigo">
         <pre>
-              
                 &lt;<span class="n1">div</span>&gt;
                     &lt;<span class="n1">h1</span>&gt;Sou um h1&lt;/<span class="n1">h1</span>&gt;
                     &lt;<span class="n1">h2</span>&gt;Sou um h2&lt;/<span class="n1">h2</span>&gt;
@@ -137,9 +144,9 @@
           </pre>
       </code>
 
-      <p>CSS:</p>
+      <h3>CSS:</h3>
 
-      <code class="principal">
+      <code class="codigo">
         <pre>
               <span class="pai">div</span> { 
                 <span class="filho">background</span>: #eee; 
@@ -166,6 +173,11 @@
         antes seriam impossíveis de serem alcançados.
       </p>
 
+    </section>
+    </section>
+
+    <section class="posicao_fixa">
+      <article class="artigo">
       <h2>CSS Position Fixed:</h2>
 
       <p>
@@ -174,10 +186,10 @@
         que ele passa a se referenciar ao window do seu navegador, ou seja, a área
         que aparece para o usuário independente de barra de rolagem.
       </p>
+    </article>
+      <h3>HTML:</h3>
 
-      <p>HTML:</p>
-
-      <code class="principal">
+      <code class="codigo">
         <pre>
               &lt;<span class="n1">div</span>&gt;
                   &lt;<span class="n1">h1</span>&gt;Sou um h1&lt;/<span class="n1">h1</span>&gt;
@@ -186,9 +198,9 @@
           </pre>
       </code>
 
-      <p>CSS:</p>
+      <h3>CSS:</h3>
 
-      <code class="principal">
+      <code class="codigo">
         <pre>
               <span class="pai">body</span> { 
                 <span class="filho">background:</span> #000; 
@@ -221,6 +233,7 @@
               }
           </pre>
       </code>
+    </section>
     </main>
   </body>
 </html>
