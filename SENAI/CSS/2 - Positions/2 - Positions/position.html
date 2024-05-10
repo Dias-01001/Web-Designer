@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Positions</title>
+  </head>
+  <body>
+    <main>
+      <header class="topo">
+        <article>
+          <h1>POSITIONS</h1>
+
+          <p>
+            No que diz respeito a controle de posições dos elementos HTML, existem
+            várias formas para alcançar tal resultado (positions, display, float),
+            hoje iremos abordar sobre as variações da propriedade position.
+          </p>
+
+          <p>
+            Position é um módulo do CSS que define como ficam as posições dos
+            elementos relativos e absolutos da página, fazendo referência aos valores
+            atribuídos quanto ao top, bottom, right e left. Esta propriedade funciona
+            perfeitamente nos navegadores desde a versão 2.1 do CSS, onde o seu foco é
+            apenas o de posicionar <strong>pequenos</strong> detalhes do layout (para
+            diagramar utilize Flexbox e Grid).
+          </p>
+
+          <p>
+            A propriedade em questão pode assumir 5 valores diferentes: Static,
+            Relative, Absolute, Fixed e Sticky. Segue explicação de cada uma:
+          </p>
+        </article>
+      </header>
+
+      <section class="estatica">
+        <article>
+          <h2>CSS Position Static:</h2>
+          <p>
+            Esse é o valor default de todo elemento HTML, ou seja, ele vai seguir o
+            fluxo comum da sua página. Para declará-lo faça:
+          </p>
+        </article>
+        <section class="ex_estatica">
+          
+          <code class="principal">
+            <pre>
+                      <span class="pai">Seletor</span> {
+                          <span class="filho">position</span>: static;
+                      }
+                  </pre>
+          </code>
+        </section>
+      </section>
+
+      <h2>CSS Position Relative</h2>
+      <p>
+        Utilizando o position Relative o elemento passa a aceitar as propriedades
+        Top, Bottom, Left e Right. Com elas você pode alterar o posicionamento do
+        elemento. Ex:
+      </p>
+      <span>HTML:</span>
+
+      <code class="principal">
+        <pre>
+            &lt;<span class="n1">div</span>&gt;
+                  &lt;<span class="n1">h1</span>&gt;Sou um h1&lt;/<span class="n1">h1</span>&gt;
+                  &lt;<span class="n1">h2</span>&gt;Sou um h2&lt;/<span class="n1">h2</span>&gt;
+              &lt;/<span class="n1">div</span>&gt;
+          </pre>
+      </code>
+
+      <span>CSS:</span>
+
+      <code class="principal">
+        <pre>
+              <span class="pai">div</span> { 
+                  <span class="filho">background:</span> #eee;
+                  <span class="filho">margin:</span> 200px 200px;
+                  <span class="filho">width:</span> 300px; height: 300px;
+            
+              }
+
+        <span class="pai">h1</span> { 
+                  <span class="filho">position:</span> relative;
+                  <span class="filho">top: 20px;</span> left: 20px;
+        
+              }
+
+        <span class="pai">h2</span> { 
+                  <span class="filho">top:</span> 20px; left: 20px; 
+              }
+          </pre>
+      </code>
+
+      <h2>CSS Position Absolute</h2>
+      <p>
+        O position Absolute é um grande quebra galho no
+        <strong><ins>CSS</ins></strong
+        >. Com ele você pode posicionar qualquer elemento de acordo com o elemento
+        pai que tenha um position diferente de static.
+      </p>
+
+      <code class="principal">
+        <pre>
+              
+                &lt;<span class="n1">div</span>&gt;
+                    &lt;<span class="n1">h1</span>&gt;
+                
+                        &lt;<span class="n1">span</span>&gt;&lt;/<span class="n1">span</span>&gt;
+                
+                    &lt;/<span class="n1">h1</span>&gt;
+                
+                    &lt;<span class="n1">p</span>&gt;&lt;/<span class="n1">p</span>&gt;
+                &lt;/<span class="n1">div</span>&gt;
+              
+          </pre>
+      </code>
+
+      <p>
+        O elemento DIV é pai dos elementos H1, P e SPAN. Os elementos H1, P e SPAN
+        são filhos do elemento DIV. Os elementos H1 e P são irmãos por estarem no
+        mesmo nível. E o elemento SPAN é filho do elemento H1 e também do elemento
+        DIV.
+      </p>
+
+      <p>HTML:</p>
+
+      <code class="principal">
+        <pre>
+              
+                &lt;<span class="n1">div</span>&gt;
+                    &lt;<span class="n1">h1</span>&gt;Sou um h1&lt;/<span class="n1">h1</span>&gt;
+                    &lt;<span class="n1">h2</span>&gt;Sou um h2&lt;/<span class="n1">h2</span>&gt;
+                &lt;<span class="n1">div</span>&gt;
+          </pre>
+      </code>
+
+      <p>CSS:</p>
+
+      <code class="principal">
+        <pre>
+              <span class="pai">div</span> { 
+                <span class="filho">background</span>: #eee; 
+                <span class="filho">margin</span>: 50px; 
+                <span class="filho">width</span>: 300px; 
+                <span class="filho">height</span>: 300px; 
+                <span class="filho">position</span>: relative;
+              }
+
+        <span class="pai">h1</span> { 
+                <span class="filho">position</span>: absolute; 
+                <span class="filho">top</span>: 20px; 
+                <span class="filho">left</span>: 20px; 
+                <span class="filho">outline</span>: 1px solid #444; }
+
+        <span class="pai">h2</span> { 
+                <span class="filho">outline</span>: 1px solid #f90; 
+              }
+          </pre>
+      </code>
+      <p>
+        Observação: podemos utilizar tanto medidas positivas quanto
+        <strong>negativas</strong>, e assim, posicionar os elementos em locais que
+        antes seriam impossíveis de serem alcançados.
+      </p>
+
+      <h2>CSS Position Fixed:</h2>
+
+      <p>
+        O position fixed se comporta de maneira semelhante ao absolute, deixando
+        de fazer parte do fluxo comum da página. Porém a grande diferença dele é
+        que ele passa a se referenciar ao window do seu navegador, ou seja, a área
+        que aparece para o usuário independente de barra de rolagem.
+      </p>
+
+      <p>HTML:</p>
+
+      <code class="principal">
+        <pre>
+              &lt;<span class="n1">div</span>&gt;
+                  &lt;<span class="n1">h1</span>&gt;Sou um h1&lt;/<span class="n1">h1</span>&gt;
+                  &lt;<span class="n1">h2</span>&gt;Sou um h2&lt;/<span class="n1">h2</span>&gt;
+              &lt;/<span class="n1">div</span>&gt;
+          </pre>
+      </code>
+
+      <p>CSS:</p>
+
+      <code class="principal">
+        <pre>
+              <span class="pai">body</span> { 
+                <span class="filho">background:</span> #000; 
+              }
+
+              <span class="pai">div</span> { 
+                <span class="filho">background:</span> #f90; 
+                <span class="filho">width:</span> 300px;
+                <span class="filho">height:</span> 1500px; 
+                <span class="filho">position:</span> relative; 
+              }
+
+              <span class="pai">h1</span> { 
+                <span class="filho">position:</span> fixed;
+                <span class="filho">top:</span> 0;
+                <span class="filho">left:</span> 20px;
+                <span class="filho">right:</span> 20px;
+                <span class="filho">outline:</span> 
+                1px solid #444; 
+                <span class="filho">background:</span> #fff;  
+              }
+
+              <span class="pai">h2 </span>{ 
+                <span class="filho">position:</span> fixed; 
+                <span class="filho">bottom:</span> 0;
+                <span class="filho">left:</span> 20px;
+                <span class="filho">right:</span> 20px;
+                <span class="filho">outline:</span> 1px solid #444;
+                <span class="filho">background:</span> #fff;
+              }
+          </pre>
+      </code>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+.principal pre {
+  width: 50%;
+  background-color: black;
+  color: white;
+  margin-left: 5%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.n1 {
+  color: deeppink;
+}
+
+.pai {
+  color: palevioletred;
+}
+
+.filho {
+  color: aquamarine;
+}
