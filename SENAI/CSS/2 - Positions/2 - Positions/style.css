@@ -48,10 +48,16 @@ h3{
 }
 
 .codigo pre {
-  width: 10vw;
+  width: 50vw;
   background-color: black;
   margin-left: 4vw;
+  font-size: 2rem;
+  padding-top: 3vh;
 
+}
+.codigo span{
+  font-size: 2rem;
+  
 }
 
 .n1 {
@@ -64,4 +70,10 @@ h3{
 
 .filho {
   color: aquamarine;
+}
+
+.exemplo_absoluta p {
+  font-size: 2rem;
+  margin-left: 2vw;
+  text-indent: 2vw;
 }
