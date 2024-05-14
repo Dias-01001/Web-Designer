@@ -1,0 +1,70 @@
+/*
+    SÃO TAGS APENAS PARA MOVER O ELEMENTO
+      left: 
+      right: ;
+      top: ;
+      bottom: ;  
+  */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #262626;
+  color: white;
+  margin-left: 3vw;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-top: 2vh;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-top: 2vh;
+}
+
+p {
+  width: 50vw;
+  font-size: 2rem;
+  margin: 2vh;
+  line-height: 2.5rem;
+  text-align: justify;
+}
+
+div {
+  width: 15vw;
+  height: 15vh;
+  padding: 0.5rem;
+  margin: 1rem 2.5rem;
+  border: 0.2rem dashed white;
+}
+
+.cubo_static {
+  background-color: blue;
+  position: static; /* Não importa o quanto quiser ele n vai se mover, pois, esta estatico */
+  top: 5rem;
+}
+
+.cubo_relative {
+  background-color: chocolate;
+  position: relative;
+  left: 55vw;
+  top: -18vh;
+}
+
+.teste {
+  position: relative;
+  
+}
+
+.cubo_absoluto {
+  left: 3vw;
+  top: -17vh;
+  position: absolute;
+}
