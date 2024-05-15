@@ -4,18 +4,57 @@
   font-size: 62.5%;
 }
 
+body{
+  background-color: rgb(197, 197, 197);
+  color: black;
+}
+
+main{
+  background-color: brown;
+  font-size: 2rem;
+  width: 80vw;
+  
+  position: relative;
+  left: 10vw;
+  top: 5vh;
+}
+
+h1{
+  margin: .5rem;
+  padding: .2rem;
+  font-size: 5rem;
+}
+
+h2{
+  margin: .5rem;
+  padding: .2rem;
+  font-size: 3.5rem;
+}
+
+p{
+  margin: .5rem;
+  padding: .2rem;
+  font-size: 2rem;
+}
+
+/* COMEÇO NAVEGAÇÃO */
 .navegacao {
   width: 100vw;
-  height: 15vh;
-  font-size: 5rem;
+  height: 20vh;
+  font-size: 6rem;
   position: relative;
 }
 
 .link_nav {
   position: absolute;
-  left: 20vw;
-  top: 0;
-  padding-left: 20px;
+  left: 17vw;
+  top: 5vh;
+}
+
+.link_nav a{
+  margin: 10rem;
+  text-decoration: none;
+  color: black;
 }
 .logo {
   width: 10vw;
@@ -25,4 +64,22 @@
 .logo img {
   position: relative;
   left: 3vw;
+  top: 1rem;
+}
+
+/* FIM NAVEGAÇÃO */
+
+/* INICIO SLOGAN */
+
+#carouselExampleIndicators{
+  margin: 0;
+}
+
+.carousel-inner{
+  border-top: .5rem solid black;
+  border-bottom: .3rem solid black ;
+  top: 2rem;
+  margin: 0;
+  height: 53rem;
+  
 }
