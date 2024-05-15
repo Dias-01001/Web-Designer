@@ -47,7 +47,7 @@ div {
 
 .cubo_static {
   background-color: blue;
-  position: static; /* Não importa o quanto quiser ele n vai se mover, pois, esta estatico */
+  position: sticky; /* Não importa o quanto quiser ele n vai se mover, pois, esta estatico */
   top: 5rem;
 }
 
@@ -60,11 +60,22 @@ div {
 
 .teste {
   position: relative;
-  
+  width: 100%;
+  height: 30vh;
+  border: dashed 0.2rem white;
+}
+
+.teste p {
+  position: absolute;
+  right: 0;
 }
 
 .cubo_absoluto {
-  left: 3vw;
-  top: -17vh;
+  left: 20vw;
+  top: 3vh;
   position: absolute;
+  border: none;
+}
+.cubo_absoluto img {
+  width: 15rem;
 }
