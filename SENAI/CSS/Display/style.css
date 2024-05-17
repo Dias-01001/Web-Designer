@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+article {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+h1 {
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 4rem;
+}
+
+h2 {
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 3.5rem;
+}
+
+h3 {
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 3rem;
+}
+
+p {
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.container {
+  width: 80vw;
+}
+
+/* inicio display: block */
+.block {
+  display: block;
+}
+
+.block article {
+  width: 2.5vw;
+  height: 5vh;
+  border: 0.1rem solid black;
+  border-radius: 10rem;
+  background-color: aquamarine;
+}
+/* fim display: block */
+
+/* inicio display: inline */
+
+.inline article {
+  border: 0.1rem solid black;
+  border-radius: 10rem;
+  background-color: aquamarine;
+  display: inline;
+}
+
+/* fim display: inline */
+
+/* inicio display: inline-blcok */
+
+.inline_block article {
+  width: 2.5vw;
+  height: 5vh;
+  border: 0.1rem solid black;
+  border-radius: 10rem;
+  background-color: aquamarine;
+  display: inline-block;
+}
+
+/* fim display: inline-block */
