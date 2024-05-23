@@ -15,7 +15,7 @@ h2 {
   text-align: center;
 }
 h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 p {
@@ -25,11 +25,6 @@ p {
 h1 h2 h3 p {
   margin: 0.2rem;
   padding: 0.2rem;
-}
-
-header {
-  width: 100%;
-  height: 20vh;
 }
 
 .lista_pokemons {
@@ -43,54 +38,115 @@ header {
 }
 
 .card01 {
-  width: 15vw;
-  height: 30vw;
+  width: 20vw;
+  height: 65vh;
+  color: white;
   border: 0.3rem solid black;
-  border-radius: 1rem;
+  border-radius: 2rem;
+  background-color: #591d77;
+  background-image: linear-gradient(to bottom, #2f163b, #591d77);
   position: absolute;
   top: 5vh;
-  left: 10vw;
+  left: 5vw;
+}
+
+.card01 h2 {
+  border-bottom: black solid 0.5rem;
+}
+
+.img_pokemon01 {
+  width: 18vw;
+  height: 35vh;
+  background-image: url(img/fundo_zoroark\ 300x600.png);
+  border: 1rem solid #2f163b;
+  border-radius: 0rem 5rem 0rem 5rem;
+  position: relative;
+  left: 5%;
+}
+
+.img_pokemon01 img {
+  position: absolute;
+  left: 10%;
 }
 
 .card02 {
-  width: 15vw;
-  height: 30vw;
+  width: 20vw;
+  height: 65vh;
+  color: white;
   border: 0.3rem solid black;
-  border-radius: 1rem;
+  border-radius: 2rem;
+  background-color: #591d77;
+  background-image: linear-gradient(to bottom, #df5b4f, #fbd43c);
   position: absolute;
   top: 5vh;
-  left: 40vw;
+  left: 35vw;
 }
 
-.img_pokemon {
-  width: 100%;
-  height: 50%;
-  border: 0.2rem solid black;
-  border-radius: 1rem;
+.card02 h2 {
+  border-bottom: black solid 0.5rem;
+}
+
+.img_pokemon02 {
+  width: 18vw;
+  height: 35vh;
+  background-image: url(img/fundo_dermanitan\ 400x400.png);
+  border: 1rem solid #df5b4f;
+  border-radius: 0rem 5rem 0rem 5rem;
   position: relative;
+  left: 5%;
 }
 
-.img_pokemon img {
+.img_pokemon02 img {
   position: absolute;
-  left: 13%;
-  top: 13%;
+  left: 0.5vw;
+  top: 5vh;
 }
 
-.card03 {
-  width: 15vw;
-  height: 30vw;
+
+.card02 {
+  width: 20vw;
+  height: 65vh;
+  color: white;
   border: 0.3rem solid black;
-  border-radius: 1rem;
+  border-radius: 2rem;
+  background-color: #591d77;
+  background-image: linear-gradient(to bottom, #df5b4f, #fbd43c);
   position: absolute;
   top: 5vh;
-  left: 70vw;
+  left: 35vw;
 }
 
-.card03 img {
+.card02 h2 {
+  border-bottom: black solid 0.5rem;
+}
+
+.img_pokemon02 {
+  width: 18vw;
+  height: 35vh;
+  background-image: url(img/fundo_dermanitan\ 400x400.png);
+  border: 1rem solid #df5b4f;
+  border-radius: 0rem 5rem 0rem 5rem;
+  position: relative;
+  left: 5%;
+}
+
+.img_pokemon02 img {
   position: absolute;
-  top: 25%;
+  left: 0.5vw;
+  top: 5vh;
 }
 
 .info_pokemon {
+  width: 100%;
+  height: 30vh;
   position: relative;
+}
+
+.info_pokemon h1 {
+  border-top: #2f163b solid 0.5rem;
+}
+
+.info_pokemon h3 {
+  position: relative;
+  left: 1vw;
 }
