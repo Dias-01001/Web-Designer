@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
 * {
   font-size: 62.5%;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+body{
+  font-family: "Pixelify Sans";
 }
 
 h1 {
@@ -43,11 +48,10 @@ h1 h2 h3 p {
   color: white;
   border: 0.3rem solid black;
   border-radius: 2rem;
-  background-color: #591d77;
-  background-image: linear-gradient(to bottom, #2f163b, #591d77);
+  background-image: linear-gradient(to bottom, #4c4850, #3a3246, #cb3a48);
   position: absolute;
   top: 5vh;
-  left: 5vw;
+  left: 10vw;
 }
 
 .card01 h2 {
@@ -57,16 +61,16 @@ h1 h2 h3 p {
 .img_pokemon01 {
   width: 18vw;
   height: 35vh;
-  background-image: url(img/fundo_zoroark\ 300x600.png);
   border: 1rem solid #2f163b;
-  border-radius: 0rem 5rem 0rem 5rem;
+  border-radius: 5rem;
   position: relative;
-  left: 5%;
+  left: .8vw;
 }
 
 .img_pokemon01 img {
+  width: 14.5vw;
   position: absolute;
-  left: 10%;
+  left: 2vw;
 }
 
 .card02 {
@@ -75,11 +79,10 @@ h1 h2 h3 p {
   color: white;
   border: 0.3rem solid black;
   border-radius: 2rem;
-  background-color: #591d77;
-  background-image: linear-gradient(to bottom, #df5b4f, #fbd43c);
+  background-image: linear-gradient(to bottom, #cb4f41, #cb4f41, #fbd43c, #fbd43c, #cb4f41, #eda674);
   position: absolute;
   top: 5vh;
-  left: 35vw;
+  left: 40vw;
 }
 
 .card02 h2 {
@@ -89,52 +92,257 @@ h1 h2 h3 p {
 .img_pokemon02 {
   width: 18vw;
   height: 35vh;
-  background-image: url(img/fundo_dermanitan\ 400x400.png);
   border: 1rem solid #df5b4f;
-  border-radius: 0rem 5rem 0rem 5rem;
+  border-radius: 5rem;
   position: relative;
-  left: 5%;
+  left: .8vw;
+  
 }
 
 .img_pokemon02 img {
+  width: 15vw;
   position: absolute;
   left: 0.5vw;
-  top: 5vh;
+  top: 2vh;
 }
 
 
-.card02 {
+.card03 {
+  width: 20vw;
+  height: 65vh;
+  color: white;
+  border: 0.3rem solid black;
+  border-radius: 2rem;
+  background-image: linear-gradient(to bottom, #506886, #506886, #f1eab1, #f1eab1, #506886, #506886, #506886);
+  position: absolute;
+  top: 5vh;
+  right: 10vw;
+}
+
+.card03 h2 {
+  border-bottom: black solid 0.5rem;
+}
+
+.img_pokemon03 {
+  width: 18vw;
+  height: 35vh;
+  border: 1rem solid #f1eab1;
+  border-radius:5rem;
+  position: relative;
+  left: .8vw;
+  
+}
+
+.img_pokemon03 img {
+  width: 15vw;
+  position: absolute;
+  left: 0.5vw;
+  top: 2vh;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+.card04 {
+  width: 20vw;
+  height: 65vh;
+  color: white;
+  border: 0.3rem solid black;
+  border-radius: 2rem;
+  background-image: linear-gradient(to bottom,#008d4a,#008d4a, #b4f4c7,#008d4a,#008d4a);
+  position: absolute;
+  top: 5vh;
+  left: 10vw;
+}
+
+.card04 h2 {
+  border-bottom: black solid 0.5rem;
+}
+
+.img_pokemon04 {
+  width: 18vw;
+  height: 35vh;
+  border: 1rem solid #fee641;
+  border-radius:5rem;
+  position: relative;
+  left: .8vw;
+}
+
+.img_pokemon04 img {
+  width: 14.5vw;
+  position: absolute;
+  left: 2vw;
+}
+
+.card05 {
+  width: 20vw;
+  height: 65vh;
+  color: white;
+  border: 0.3rem solid black;
+  border-radius: 2rem;
+  background-image: linear-gradient(to bottom, #b96875, #b96875, #535050, #b96875, #535050, #b96875, #b96875);
+  position: absolute;
+  top: 5vh;
+  left: 40vw;
+}
+
+.card05 h2 {
+  border-bottom: black solid 0.5rem;
+}
+
+.img_pokemon05 {
+  width: 18vw;
+  height: 35vh;
+  border: 1rem solid #1a1a16;
+  border-radius: 5rem;
+  position: relative;
+  left: .8vw;
+  
+}
+
+.img_pokemon05 img {
+  width: 15vw;
+  position: absolute;
+  left: 1.5vw;
+  
+}
+
+
+.card06 {
+  width: 20vw;
+  height: 65vh;
+  color: white;
+  border: 0.3rem solid black;
+  border-radius: 2rem;
+  background-image: linear-gradient(to bottom, #39b4a9,#39b4a9, #d0ddb5, #d0ddb5,#39b4a9,#39b4a9);
+  position: absolute;
+  top: 5vh;
+  right: 10vw;
+}
+
+.card06 h2 {
+  border-bottom: black solid 0.5rem;
+}
+
+.img_pokemon06 {
+  width: 18vw;
+  height: 35vh;
+  border: 1rem solid #ca8581;
+  border-radius: 5rem;
+  position: relative;
+  left: .8vw;
+  
+}
+
+.img_pokemon06 img {
+  width: 15vw;
+  position: absolute;
+  left: 1.2vw;
+  top: 2vh;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+.card07 {
+  width: 20vw;
+  height: 65vh;
+  color: white;
+  border: 0.3rem solid black;
+  border-radius: 2rem;
+  background-image: linear-gradient(to bottom, #a59581, #e9e1d9,#a59581, #e9e1d9);
+  position: absolute;
+  top: 5vh;
+  left: 10vw;
+}
+
+.card07 h2 {
+  border-bottom: black solid 0.5rem;
+}
+
+.img_pokemon07 {
+  width: 18vw;
+  height: 35vh;
+  border: 1rem solid #535353;
+  border-radius: 5rem;
+  position: relative;
+  left: .8vw;
+}
+
+.img_pokemon07 img {
+  width: 14.5vw;
+  position: absolute;
+  left: 2vw;
+}
+
+.card08 {
   width: 20vw;
   height: 65vh;
   color: white;
   border: 0.3rem solid black;
   border-radius: 2rem;
   background-color: #591d77;
-  background-image: linear-gradient(to bottom, #df5b4f, #fbd43c);
+  background-image: linear-gradient(to bottom, #dbdad6, #2f8c42, #2f8c42, #c9995a);
   position: absolute;
   top: 5vh;
-  left: 35vw;
+  left: 40vw;
 }
 
-.card02 h2 {
+.card08 h2 {
   border-bottom: black solid 0.5rem;
 }
 
-.img_pokemon02 {
+.img_pokemon08 {
   width: 18vw;
   height: 35vh;
-  background-image: url(img/fundo_dermanitan\ 400x400.png);
-  border: 1rem solid #df5b4f;
-  border-radius: 0rem 5rem 0rem 5rem;
+  border: 1rem solid #1f632c;
+  border-radius: 5rem;
   position: relative;
-  left: 5%;
+  left: .8vw;
+  
+  
 }
 
-.img_pokemon02 img {
+.img_pokemon08 img {
+  width: 15vw;
   position: absolute;
-  left: 0.5vw;
-  top: 5vh;
+  left: 1.5vw;
+  
 }
+
+
+.card09 {
+  width: 20vw;
+  height: 65vh;
+  color: white;
+  border: 0.3rem solid black;
+  border-radius: 2rem;
+  background-image: linear-gradient(to bottom, #ec8086, #f1e2bd, #f1e2bd, #6c6b68, #8cecf2);
+  position: absolute;
+  top: 5vh;
+  right: 10vw;
+}
+
+.card09 h2 {
+  border-bottom: black solid 0.5rem;
+}
+
+.img_pokemon09 {
+  width: 18vw;
+  height: 35vh;
+  border: 1rem solid #f1e2bd;
+  border-radius: 5rem;
+  position: relative;
+  left: .8vw;
+  
+}
+
+.img_pokemon09 img {
+  width: 15vw;
+  position: absolute;
+  left: 1vw;
+  top: .5vh;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
 
 .info_pokemon {
   width: 100%;
