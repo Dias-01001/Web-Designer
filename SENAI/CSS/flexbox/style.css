@@ -1,0 +1,53 @@
+* {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0.2rem;
+  padding: 0.2rem;
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 0.2rem;
+  padding: 0.2rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  margin: 0.2rem;
+  padding: 0.2rem;
+}
+
+p {
+  font-size: 2rem;
+  margin: 0.2rem;
+  padding: 0.2rem;
+}
+.cont {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 50vw;
+  height: 40vh;
+  border: 0.2rem solid black;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.quadrasdos {
+  width: 10rem;
+  height: 10rem;
+  background-color: coral;
+  border: 0.1rem solid black;
+}
