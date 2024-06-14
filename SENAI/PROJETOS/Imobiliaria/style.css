@@ -29,12 +29,12 @@ p {
 
 .container {
   width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 .container_fundo {
-  
   z-index: -1;
 }
 .container_fundo img {
@@ -44,38 +44,116 @@ p {
 }
 
 .container_card {
-  width: 80vw;
+  width: 100vw;
   height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.card {
-  width: 15vw;
-  height: 45rem;
+.fundo_card {
+  width: 80vw;
+  height: 50vh;
   background-color: chocolate;
-  color: white;
+  border: black solid 0.2rem;
   border-radius: 1rem;
   display: flex;
-  flex-direction: column;
-  flex-grow: 1;
 }
 
-.icone{
-  width: 100%;
-  height: 20%;
-  border: black solid 0.2rem;
+.local_card {
+  width: 25vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.container_mini{
-
-  flex-grow: 8;
-}
-
-.mini_cards{
+.card {
   width: 15vw;
+  height: 35rem;
+  background-color: chocolate;
+  color: white;
+  border: black solid 0.1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.icone {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icone img {
+  width: 5vw;
+  height: 10vh;
+  background-color: black;
+  border-radius: 5rem;
+}
+
+.texto_card {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.texto_card h2 {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_mini {
+  width: 60vw;
+  height: 100%;
+}
+
+.local_mini {
+  width: 60vw;
+  height: 25vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.mini_cards {
+  width: 14vw;
   height: 8vh;
   background-color: chocolate;
-  border: black solid .2rem;
+  border: black solid 0.1rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.mini_cards p {
+  width: 11vw;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mini_icon {
+  width: 3vw;
+  height: 8vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mini_icon img {
+  width: 2vw;
+  height: 5vh;
+  background-color: black;
+  border-radius: 5rem;
 }
